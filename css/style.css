@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Bad+Script&family=Courgette&family=Julee&display=swap');
+.jumbotron {
+    background-image: linear-gradient(135deg, #00ccff, #9933ff 31%, #e646b6 52%, #fff9aa 77%, #00ff99, #00ccff);
+    background-size: 100%;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    color: black;
+    font-family: 'Julee', cursive;
+}
+
+body {
+    background-color: lightsteelblue
+}
+
+.navbarbrand {
+    font-size: 26px;
+    font-family: 'Julee', cursive;
+}
+
+h3 {
+    font-family: 'Julee', cursive;
+}
+
+#movies img, #movie img {
+    width: 100%;
+}
+
