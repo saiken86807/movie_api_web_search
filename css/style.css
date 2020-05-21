@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Bad+Script&family=Courgette&family=Julee&display=swap');
 
 html {
-    height: 100%;
+    height: 100vh;
 }
 
 .jumbotron {
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background-color: lightsteelblue
+    background-color: lightsteelblue;
 }
 
 .navbarbrand {
@@ -72,7 +72,7 @@ p {
 
 #movies img, #movie img {
     width: 100%;
-    align-items: center;
+   
     
 }
 
@@ -82,8 +82,10 @@ p {
 
 footer {
     margin-top: auto;
-    padding: 30px;
-    display: block;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
 .btn {
@@ -103,11 +105,4 @@ footer {
     }
 }
 
-@media(min-width:320px) {
-    #movies .col-md-3 img {
-        width: 60%;
-        height: 240px;
-        padding: 10px;
-    }
-}
 
