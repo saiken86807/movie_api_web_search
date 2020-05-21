@@ -16,9 +16,9 @@ Search for a Movie or TV Show Title to learn more!
 3. As a user looking for certain movies, I want to have the option of also being able to see the source this information came from.
 
 ### Who is this product for?
-Anyone who is interested in searching for movie and/or tv titles are learning more about them. 
+Anyone who is interested in searching for movie and/or tv titles and learning more about them. 
 
 ### Ideas for Future Improvement
 1. I would like to become more familiar with API's and Javascript to try out other API's I had looked at prior to the movie API.
-2. Learn how to have my collums/rows align better with with the media queries for a  responsive webpage.
+2. Learn how to have my columns/rows align better with with the media queries for a responsive webpage.
 
