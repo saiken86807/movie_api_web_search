@@ -74,7 +74,7 @@ p {
     width: 100%;    
 }
 
-#movies, .well {
+#movies, .movie, .well {
     padding-bottom: 30px;
 }
 
