@@ -74,7 +74,7 @@ p {
     width: 100%;    
 }
 
-#movies {
+#movies, .well {
     padding-bottom: 30px;
 }
 
@@ -95,9 +95,15 @@ p {
     padding-right: 20px;
 }
 
+.col-md-4 {
+    display: flex;
+    align-items: center;
+
+}
+
 @media(min-width:960px) {
     #movies .col-md-3 .well {
-        height: 390px;
+        height: 450px;
     }
 
     #movies .col-md-3 img {
