@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Bad+Script&family=Courgette&family=Julee&display=swap');
 
 html {
-    height: 100vh;
+    min-height: 100%;
+    position: relative;
 }
 
 .jumbotron {
@@ -15,7 +16,7 @@ html {
 }
 
 body {
-    background-color: lightsteelblue;
+    background-color: lightsteelblue;    
 }
 
 .navbarbrand {
@@ -67,25 +68,25 @@ p {
 }
 .list-group, .go-back {
     font-family: 'Courgette', cursive;
-
 }
 
 #movies img, #movie img {
-    width: 100%;
-   
-    
+    width: 100%;    
+}
+
+#movies {
+    padding-bottom: 30px;
 }
 
 .thumbnail {
     padding-top: 20px;
 }
 
-footer {
-    margin-top: auto;
-    position: relative;
+.footer {
+    position: absolute;
+    left: 0;
     bottom: 0;
     width: 100%;
-    padding-bottom: 20px;
 }
 
 .btn {
@@ -105,4 +106,5 @@ footer {
     }
 }
 
+/* need to add media queries for (min-width: 320, 480)*/
 
