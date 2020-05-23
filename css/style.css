@@ -1,116 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Bad+Script&family=Courgette&family=Julee&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Bad+Script&family=Courgette&family=Julee&display=swap");
 html {
-    min-height: 100%;
-    position: relative;
-}
-
-.jumbotron {
-    background-image: linear-gradient(135deg, #00ccff, #9933ff 31%, #e646b6 52%, #fff9aa 77%, #00ff99, #00ccff);
-    background-size: 100%;
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 0.2em;
-    color: black;
-    font-family: 'Julee', cursive;
-}
-
-body {
-    background-color: lightsteelblue;    
+  min-height: 100%;
+  position: relative;
 }
 
 .navbarbrand {
-    font-size: 26px;
-    font-family: 'Julee', cursive;
+  font-size: 26px;
+  font-family: "Julee", cursive;
 }
 
-form .searchInput {
-    width: 60%;
-    min-width: 200px;
-    max-width: 600px;
-    padding: 10px;
-    border-radius: 2px;
-    font-size: 16px;
-    border: 1px solid white;
-}
-
-form .searchInput:focus {
-    outline: 0;
-    color: black;
-    background: white;
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+.jumbotron {
+  background-image: linear-gradient(135deg, #00ccff, #9933ff 31%, #e646b6 52%, #fff9aa 77%, #00ff99, #00ccff);
+  background-size: 100%;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+  color: black;
+  font-family: "Julee", cursive;
 }
 
 form .btn {
-    cursor: pointer;
-    width: 60px;
-    border-radius: 5px;
-    border: 2px solid black;
-    padding: 10px;
-    font-size: 16px;
+  cursor: pointer;
+  width: 60px;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Julee", cursive;
+  margin: 10px;
+  padding-right: 20px;
 }
 
 form .btn:hover {
-    color: #333;
-    background: white;
+  color: #333;
+  background: white;
 }
 
-h1, h2, h5, footer {
-    font-family: 'Julee', cursive;
-    padding: 20px;
-    text-align: center;
-}
-p {
-    font-family: 'Courgette', cursive;
-    text-align: center;
-    font-size: 18px;
-    padding: 20px;
-}
-.list-group, .go-back {
-    font-family: 'Courgette', cursive;
+form .searchInput {
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Julee", cursive;
+  width: 60%;
+  min-width: 100px;
+  max-width: 600px;
 }
 
-#movies img, #movie img {
-    width: 100%;    
+form .searchInput:focus {
+  outline: 0;
+  color: black;
+  background: white;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-#movies, .movie, .well {
-    padding-bottom: 30px;
+body {
+  background: lightsteelblue;
 }
 
-.thumbnail {
-    padding-top: 20px;
+#movies .col-md-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  font-family: "Julee", cursive;
 }
 
-.footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+#movies .col-md-3 img {
+  width: 100%;
+  height: 200px;
 }
 
-.btn {
-    font-family: 'Julee', cursive; 
-    margin: 10px;
-    padding-right: 20px;
+#movies .col-md-3 h5 {
+  padding-top: 10px;
+  height: 75px;
+}
+
+#movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 400px;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  font-family: "Julee", cursive;
+}
+
+#movie img {
+  width: 100%;
+}
+
+#movie h2 {
+  font-family: "Julee", cursive;
+  text-align: center;
+  padding: 20px;
+}
+
+#movie p {
+  font-family: "Courgette", cursive;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+}
+
+#movie .list-group, #movie .go-back {
+  font-family: "Courgette", cursive;
+}
+
+#movie .imdb-view {
+  font-family: "Julee", cursive;
 }
 
 .col-md-4 {
-    display: flex;
-    align-items: center;
-
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media(min-width:960px) {
-    #movies .col-md-3 .well {
-        height: 450px;
-    }
-
-    #movies .col-md-3 img {
-        width: 90%;
-        height: 240px;
-    }
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
-
-/* need to add media queries for (min-width: 320, 480)*/
-
+/*# sourceMappingURL=style.css.map */

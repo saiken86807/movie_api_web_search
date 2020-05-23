@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Bad+Script&family=Courgette&family=Julee&display=swap');
+@import './variables';
+@import './mixins';
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+.navbarbrand {
+    font-size: 26px;
+    font-family: $primaryFont;
+}
+
+.jumbotron {
+    background-image: linear-gradient(135deg, #00ccff, #9933ff 31%, #e646b6 52%, #fff9aa 77%, #00ff99, #00ccff);
+    background-size: 100%;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    color: black;
+    font-family: $primaryFont;
+}
+form .btn {
+    cursor: pointer;
+    width: 60px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 16px;
+    font-family: $primaryFont; 
+    margin: 10px;
+    padding-right: 20px;
+    &:hover {
+        color: #333;
+        background: white;
+    }
+}
+
+form .searchInput {
+    @include border();
+    width: 60%;
+    min-width: 100px;
+    max-width: 600px;
+    &:focus {
+        outline: 0;
+        color: black;
+        background: white;
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+    }
+}
+body {
+    background: lightsteelblue
+}
+#movies .col-md-3 {
+    @include flexContainer(column);
+    img{
+        width: 100%;
+        height: 200px;
+    }
+    h5 {
+        padding-top: 10px;
+        height:75px;
+    }
+}
+
+#movie {
+    @include flexContainer(row);
+    img {
+        width: 100%;
+    }
+    h2 {
+        font-family: $primaryFont;
+        text-align: center;
+        padding: 20px;
+    }
+    p {
+        font-family: $secondaryFont;
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+    }
+    .list-group, .go-back {
+        font-family: $secondaryFont;
+    }
+    .imdb-view {
+        font-family: $primaryFont;
+    }
+   
+}
+
+.col-md-4 {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
