@@ -1,0 +1,38 @@
+@media(min-width:1200px) {
+    #movies {
+       margin-bottom: 30px;
+    }
+    #movies .col-md-3 {
+        @include bigFlexContainer(column);
+        align-items: center;
+        padding-top: 30px;
+        margin: 20px 0;
+    }
+
+    #movies .col-md-3 .well {
+        height: 450px;
+    }
+
+    #movies .col-md-3 img {
+        width: 90%;
+        height: 240px;
+    }
+}
+
+@media (min-width:320px) {
+    #movies .col-md-3{
+    @include smallFlexContainer(column);
+    }
+
+    #movies .col-md-3 img {
+        width: 100%;
+    }
+
+    h5 {
+        height: 50px;
+    }
+
+    #movie img {
+        padding-top: 30px;
+    }
+}
