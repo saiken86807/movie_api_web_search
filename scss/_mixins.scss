@@ -1,0 +1,36 @@
+@mixin border(){
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 16px;
+    font-family: $primaryFont;
+}
+
+@mixin flexContainer($direction) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+    height: 400px;
+    align-content: space-between;
+    font-family: $primaryFont;
+}
+
+@mixin smallFlexContainer($direction) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+    height: 370px;
+    align-content: center;
+    justify-content: center;
+    font-family: $primaryFont;
+}
+
+@mixin bigFlexContainer($direction) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+    height: 900px;
+    align-content: center;
+    justify-content: center;
+    font-family: $primaryFont;
+}
