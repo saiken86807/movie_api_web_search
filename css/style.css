@@ -19,16 +19,18 @@ html {
   font-family: "Julee", cursive;
 }
 
+.jumbotron h2 {
+  font-family: "Julee", cursive;
+}
+
 form .btn {
   cursor: pointer;
-  width: 60px;
   border-radius: 5px;
   border: 2px solid black;
   padding: 10px;
   font-size: 16px;
   font-family: "Julee", cursive;
   margin: 10px;
-  padding-right: 20px;
 }
 
 form .btn:hover {
@@ -59,6 +61,10 @@ body {
   background: lightsteelblue;
 }
 
+#content {
+  padding-bottom: 80px;
+}
+
 #movies .col-md-3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,8 +87,19 @@ body {
 }
 
 #movies .col-md-3 h5 {
+  margin-top: 10px;
   padding-top: 10px;
   height: 75px;
+  font-family: "Julee", cursive;
+}
+
+#movies .col-md-3 a {
+  font-family: "Julee", cursive;
+  padding: 10px;
+}
+
+#movies .col-md-3 .well {
+  padding-bottom: 30px;
 }
 
 #movie {
@@ -99,6 +116,7 @@ body {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   font-family: "Julee", cursive;
+  padding-bottom: 80px;
 }
 
 #movie img {
@@ -140,5 +158,91 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
+  background-color: #8ca9cf;
+  padding-top: 10px;
+}
+
+.footer .fixd-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .fixd-bottom span {
+  font-family: "Courgette", cursive;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  #movies {
+    margin-bottom: 30px;
+  }
+  #movies .col-md-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 900px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Julee", cursive;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 30px;
+    margin: 20px 0;
+  }
+  #movies .col-md-3 .well {
+    height: 450px;
+  }
+  #movies .col-md-3 img {
+    width: 90%;
+    height: 240px;
+  }
+}
+
+@media (min-width: 320px) {
+  #movies .col-md-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 370px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Julee", cursive;
+  }
+  #movies .col-md-3 img {
+    width: 100%;
+  }
+  h5 {
+    height: 50px;
+  }
+  #movie img {
+    padding-top: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
