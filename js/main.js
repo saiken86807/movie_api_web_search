@@ -31,8 +31,9 @@ function getMovies(searchText) {
         $('#movies').html(output);
     })
     .catch(function (error) {
-        console.log(error);
-    });
+       // console.log(error);
+     alert("Sorry! Your search could not be completed at this time. Please check your network connection and try again.");
+   });
 }
 
 function movieSelected(id) {
