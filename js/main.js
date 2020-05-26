@@ -31,7 +31,6 @@ function getMovies(searchText) {
         $('#movies').html(output);
     })
     .catch(function (error) {
-       // console.log(error);
         alert("Your search could not be completed at this time. Please check your network connection and try again.");
     });
 }
@@ -84,7 +83,6 @@ function getMovie() {
         $('#movie').html(output);
     })
     .catch(function (error) {
-       // console.log(error);
        alert("Your search could not be completed at this time. Please check your network connection and try again.");
     });
 }
