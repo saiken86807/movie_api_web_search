@@ -20,7 +20,7 @@ html {
     letter-spacing: 0.2em;
     color: black;
     font-family: $primaryFont;
-    h2{
+    h2 {
         font-family: $primaryFont;
     }
 }
@@ -62,7 +62,7 @@ body {
 
 #movies .col-md-3 {
     @include flexContainer(column);
-    img{
+    img {
         width: 100%;
         height: 200px;
     }
